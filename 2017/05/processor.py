@@ -1,4 +1,3 @@
-import argparse
 
 def execute(curr, inst):
     val = inst[curr]
@@ -7,10 +6,7 @@ def execute(curr, inst):
     return new
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("path")
-    args = parser.parse_args()
-    path = args.path
+    path = "2017/05/day5.txt"
 
     inst = []
     with open(path, 'r') as f:

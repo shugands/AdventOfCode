@@ -1,11 +1,7 @@
-import argparse
 import re
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("path")
-    args = parser.parse_args()
-    path = args.path
+    path = "2017/07/day7.txt"
 
     data = {}
     first = ""

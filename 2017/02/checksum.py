@@ -1,6 +1,4 @@
 import sys
-import argparse
-
 
 def checksum(data):
     size = len(data)
@@ -17,16 +15,13 @@ def checksum(data):
     return sum
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("file")
-    args = parser.parse_args()
-    path = args.file
+    path = "2017/02/day2.txt"
     data = []
     with open(path, 'r') as f:
         for line in f:
             row = list(map(int, line.split("\t")))
             data.append(row)
-    print(checksum(data))
+    print("Checksum: " + str(checksum(data)))
 
 if __name__ == "__main__":
     main()

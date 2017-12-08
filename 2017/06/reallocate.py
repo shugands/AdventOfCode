@@ -1,4 +1,3 @@
-import argparse
 
 def reallocate(banks):
     cache = max(banks)
@@ -12,10 +11,7 @@ def reallocate(banks):
         cache -= 1
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("path")
-    args = parser.parse_args()
-    path = args.path
+    path =  "2017/06/day6.txt"
 
     banks = []
     with open(path, 'r') as f:

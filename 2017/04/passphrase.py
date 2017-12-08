@@ -1,4 +1,3 @@
-import argparse
 
 def checkPassphrase(phrase):
     phrase = phrase.replace("\n", "")
@@ -11,10 +10,7 @@ def checkPassphrase(phrase):
     return True
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("path")
-    args = parser.parse_args()
-    path = args.path
+    path = "2017/04/day4.txt"
 
     sum = 0
     with open(path, 'r') as f:
